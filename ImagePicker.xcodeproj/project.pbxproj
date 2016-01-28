@@ -14,6 +14,7 @@
 		2FB824A01C537C1800DD56FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB8249E1C537C1800DD56FB /* LaunchScreen.storyboard */; };
 		2FB824AB1C537C1800DD56FB /* ImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB824AA1C537C1800DD56FB /* ImagePickerTests.swift */; };
 		2FB824B61C537C1800DD56FB /* ImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB824B51C537C1800DD56FB /* ImagePickerUITests.swift */; };
+		2FC080071C58A41F00BED94C /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC080061C58A41F00BED94C /* TextAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2FB824B11C537C1800DD56FB /* ImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB824B51C537C1800DD56FB /* ImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUITests.swift; sourceTree = "<group>"; };
 		2FB824B71C537C1800DD56FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC080061C58A41F00BED94C /* TextAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2FB8249C1C537C1800DD56FB /* Assets.xcassets */,
 				2FB8249E1C537C1800DD56FB /* LaunchScreen.storyboard */,
 				2FB824A11C537C1800DD56FB /* Info.plist */,
+				2FC080061C58A41F00BED94C /* TextAttributes.swift */,
 			);
 			path = ImagePicker;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					2FB824911C537C1800DD56FB = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JGKS72ETPX;
 					};
 					2FB824A51C537C1800DD56FB = {
 						CreatedOnToolsVersion = 7.2;
@@ -258,6 +262,7 @@
 			files = (
 				2FB824981C537C1800DD56FB /* ViewController.swift in Sources */,
 				2FB824961C537C1800DD56FB /* AppDelegate.swift in Sources */,
+				2FC080071C58A41F00BED94C /* TextAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +402,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.ImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.ImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +493,7 @@
 				2FB824BC1C537C1800DD56FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FB824BD1C537C1800DD56FB /* Build configuration list for PBXNativeTarget "ImagePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +502,7 @@
 				2FB824BF1C537C1800DD56FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FB824C01C537C1800DD56FB /* Build configuration list for PBXNativeTarget "ImagePickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				2FB824C21C537C1800DD56FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

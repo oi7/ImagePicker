@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+let memeTextAttributes = [
+    NSStrokeColorAttributeName : UIColor.blackColor(),
+    NSForegroundColorAttributeName : UIColor.whiteColor(),
+    NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 20)!,
+]
